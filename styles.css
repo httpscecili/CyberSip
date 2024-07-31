@@ -1,18 +1,29 @@
+:root {
+    --color-primary: #4b0082; /* Roxo */
+    --color-secondary: #8b4513; /* Marrom */
+    --color-light: #fff;
+    --color-dark: #333;
+    --color-beige: #f5f5dc;
+    --font-primary: 'Poppins', sans-serif;
+}
+
 body {
-    font-family: Poppins, sans-serif;
+    font-family: var(--font-primary);
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
+    background: linear-gradient(to right, var(--color-secondary), var(--color-beige));
+    color: var(--color-dark);
+    min-height: 100vh; /* Garante que o gradiente cubra toda a altura da página */
 }
 
 header {
-    background-color: #4b0082; /* Roxo */
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-light);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1em;
+
 }
 
 .logo {
@@ -32,14 +43,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: var(--color-light);
     text-decoration: none;
     font-weight: bold;
 }
 
 .hero {
-    background-color: #8b4513; /* Marrom */
-    color: #fff;
+    background-color: var(--color-secondary);
+    color: var(--color-light);
     text-align: center;
     padding: 2em 0;
 }
@@ -47,14 +58,14 @@ nav ul li a {
 section {
     padding: 2em;
     margin: 1em 0;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 footer {
     text-align: center;
     padding: 1em;
-    background-color: #4b0082;
-    color: #fff;
+    background-color: var(--color-primary);
+    color: var(--color-light);
 }
